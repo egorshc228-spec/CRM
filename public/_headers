@@ -1,5 +1,0 @@
-/*
-  Content-Security-Policy: frame-ancestors 'self' https://web.telegram.org https://*.web.telegram.org
-  X-Content-Type-Options: nosniff
-  Referrer-Policy: same-origin
-  X-Robots-Tag: noindex, nofollow
