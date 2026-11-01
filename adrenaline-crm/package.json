@@ -1,0 +1,16 @@
+{
+  "name": "adrenaline-crm",
+  "version": "0.2.0",
+  "description": "CRM агентства ADrenaline (Cloudflare Pages + D1)",
+  "scripts": {
+    "dev": "wrangler pages dev --port 8788",
+    "db:local": "wrangler d1 migrations apply adrenaline-crm --local",
+    "db:remote": "wrangler d1 migrations apply adrenaline-crm --remote",
+    "test": "node test/tg-auth.mjs && node test/tz.mjs && node test/smoke.mjs"
+  },
+  "devDependencies": {
+    "wrangler": "^3.114.0"
+  },
+  "private": true,
+  "type": "module"
+}
